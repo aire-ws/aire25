@@ -1,8 +1,8 @@
 .top-bar {
-  background-color: #45a5d8;
+  background-color: #735491;
 }
 .top-bar-section li:not(.has-form) a:not(.button){
-  background-color: #45a5d8;
+  background-color: #735491;
 }
 
 footer {
