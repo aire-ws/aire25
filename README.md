@@ -1,2 +1,2 @@
-# aire24
-Eleventh International Workshop on Artificial Intelligence and Requirements Engineering
+# aire25
+Twelfth International Workshop on Artificial Intelligence and Requirements Engineering
