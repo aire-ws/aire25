@@ -31,6 +31,56 @@
 				font-size: 10pt;
 			}
 		}
+
+		.keynote-container {
+			display: flex;
+			align-items: flex-start;
+			gap: 20px;
+			margin-bottom: 20px;
+		}
+
+		.keynote-image {
+			flex-shrink: 0;
+			width: 120px;
+		}
+
+		.keynote-image img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+		}
+
+		.keynote-content {
+			flex: 1;
+		}
+
+		.keynote-speaker {
+			font-size: 18px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 8px;
+		}
+
+		.keynote-title {
+			font-size: 16px;
+			font-weight: 500;
+			color: #666;
+			margin-bottom: 15px;
+			line-height: 1.4;
+		}
+
+		@media only screen and (max-width: 640px) {
+			.keynote-container {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			.keynote-image {
+				width: 100px;
+				margin-bottom: 15px;
+			}
+		}
 	</style>
 </head>
 
@@ -87,13 +137,14 @@
 
 					<h2 id="keynote">Keynote</h2>
 
-			<div class="small-12 columns">
-				<div class="small-9 columns">
-					<p><strong>Speaker: Chetan Arora</strong></p>
-					<p><strong>Title:</strong> RAG to RichEs: Bridging RE Automation Pains with RAG Gains</p>
+			<div class="keynote-container">
+				<div class="keynote-image">
+					<img src="img/chetan-arora.jpg" alt="Chetan Arora" />
 				</div>
-				<div class="small-3 columns"><img src="img/chetan-arora.jpg" width="100%" /></div>
-
+				<div class="keynote-content">
+					<div class="keynote-speaker">Chetan Arora</div>
+					<div class="keynote-title">RAG to RichEs: Bridging RE Automation Pains with RAG Gains</div>
+				</div>
 			</div>
 
 			<p style="text-align: justify; margin-top: 2px;"><strong>Abstract:</strong>
