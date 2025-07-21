@@ -81,6 +81,119 @@
 				margin-bottom: 15px;
 			}
 		}
+
+		.program-info-card {
+			background: #fff;
+			border-radius: 12px;
+			box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+			padding: 28px 32px 24px 32px;
+			margin-bottom: 32px;
+			margin-top: 10px;
+			max-width: 700px;
+		}
+
+		.program-details {
+			margin-bottom: 18px;
+		}
+
+		.program-date-location {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 18px;
+			font-size: 1.1em;
+			color: #2c3e50;
+			margin-bottom: 6px;
+		}
+
+		.program-date i, .program-location i {
+			color: #735491;
+			margin-right: 5px;
+		}
+
+		.program-mainconf-label {
+			font-weight: 500;
+			color: #555;
+			margin-right: 6px;
+		}
+
+		.program-mainconf-title {
+			font-weight: 600;
+			color: #735491;
+		}
+
+		.program-schedule {
+			margin-top: 10px;
+		}
+
+		.schedule-title {
+			font-size: 1.15em;
+			font-weight: 600;
+			margin-bottom: 10px;
+			color: #333;
+		}
+
+		.schedule-timeline {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			border-left: 3px solid #735491;
+		}
+
+		.schedule-timeline li {
+			position: relative;
+			margin-bottom: 18px;
+			padding-left: 22px;
+		}
+
+		.schedule-timeline li:before {
+			content: '';
+			position: absolute;
+			left: -8px;
+			top: 6px;
+			width: 12px;
+			height: 12px;
+			background: #fff;
+			border: 3px solid #735491;
+			border-radius: 50%;
+			z-index: 1;
+		}
+
+		.schedule-time {
+			font-weight: 500;
+			color: #735491;
+			margin-right: 10px;
+			min-width: 70px;
+			display: inline-block;
+		}
+
+		.schedule-session {
+			font-weight: 500;
+			color: #222;
+		}
+
+		.schedule-sub {
+			list-style: none;
+			padding-left: 0;
+			margin: 6px 0 0 0;
+		}
+
+		.schedule-sub li {
+			font-size: 0.98em;
+			color: #555;
+			margin-bottom: 2px;
+			padding-left: 0;
+		}
+
+		@media only screen and (max-width: 640px) {
+			.program-info-card {
+				padding: 16px 8px 12px 8px;
+				max-width: 100%;
+			}
+			.program-date-location {
+				flex-direction: column;
+				gap: 4px;
+			}
+		}
 	</style>
 </head>
 
@@ -129,11 +242,55 @@
 
 		<div class="large-8 medium-8 columns">
 
-			<h2 id="program">Program</h1>
+			<h2 id="program">Program</h2>
 
 			<p>Registration: <a href="https://eventos.adeit.es/134059/detail/33rd-ieee-international-requirements-engineering-2025-conference.html" target="'_blank">click here</a>.</p>
 
 			<p>The program of the AIRE workshop is currently in plan.</p>
+
+			<!-- Modern Program Info Section -->
+			<div class="program-info-card">
+				<div class="program-details">
+					<div class="program-date-location">
+						<span class="program-date"><i class="fi-calendar"></i> Tuesday, September 2nd, 2025</span>
+						<span class="program-location"><i class="fi-marker"></i> ADEIT, Fundación Universidad-Empresa, Valencia, Spain</span>
+					</div>
+				</div>
+			</div>
+			<div class="program-info-card">
+				<div class="program-schedule">
+					<ul class="schedule-timeline">
+						<li>
+							<span class="schedule-time">09:00-09:30</span>
+							<span class="schedule-session">Session 1 – Opening &amp; Keynote</span>
+						</li>
+						<li>
+							<span class="schedule-time">10:30-11:00</span>
+							<span class="schedule-session">Coffee Break</span>
+						</li>
+						<li>
+							<span class="schedule-time">11:00-12:30</span>
+							<span class="schedule-session">Session 2 – Paper Presentations</span>
+						</li>
+						<li>
+							<span class="schedule-time">12:30-14:00</span>
+							<span class="schedule-session">Lunch</span>
+						</li>
+						<li>
+							<span class="schedule-time">14:00-15:30</span>
+							<span class="schedule-session">Session 3 – Paper Presentations</span>
+						</li>
+						<li>
+							<span class="schedule-time">15:30-16:00</span>
+							<span class="schedule-session">Coffee Break</span>
+						</li>
+						<li>
+							<span class="schedule-time">16:00-17:30</span>
+							<span class="schedule-session">Session 4 – Paper Presentations</span>
+						</li>
+					</ul>
+				</div>
+			</div>
 
 					<h2 id="keynote">Keynote</h2>
 
